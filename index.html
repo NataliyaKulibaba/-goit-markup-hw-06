@@ -69,22 +69,22 @@
                     
                     <input type="text" class="form-input" name="name" placeholder=" ">
                     <span class="form-label">Имя</span>
-                    <div class="mobile-icon">
-                      <svg class="mobile-svg">
+                    
+                      <svg class="mobile-icon">
                         <use href="./images/svg/sprite.svg#icon-mob-name"></use>
                       </svg>
-                    </div>
+                    
                   </label>
                   
                   <label class="form-field">
                     
                     <input type="tel" class="form-input" name="tel" placeholder=" ">
                     <span class="form-label">Телефон</span>
-                    <div class="mobile-icon">
-                      <svg class="mobile-svg">
+                    
+                      <svg class="mobile-icon">
                         <use href="./images/svg/sprite.svg#icon-mob-phone"></use>
                       </svg>
-                    </div>
+                    
                   </label>
                 
 
@@ -92,31 +92,33 @@
                     
                     <input type="Email" class="form-input" name="Email" placeholder=" ">
                     <span class="form-label">Почта</span>
-                    <div class="mobile-icon">
-                      <svg class="mobile-svg">
+                    
+                      <svg class="mobile-icon">
                         <use href="./images/svg/sprite.svg#icon-mob-email"></use>
                       </svg>
-                    </div>
-                  </label>
-              
-                  <label class="form-field ">
-
-                    <textarea class="form-textarea" name="Comment" rows="8" placeholder="Введите текст"></textarea>
-                    <span class="form-label">Комментарий</span>
                     
                   </label>
               
+                  <label class="form-field ">
+                    <span class="textaria-item">Комментарий</span>
+                    <textarea class="form-textarea" name="Comment" rows="8" placeholder="Введите текст"></textarea>
+                    
+                  </label>
+              
+                  <label class="form-field-checkbox">
+                    <input type="checkbox" class="checkbox" name="policy">
+                    <span class="checkbox-icon"></span>
+                    <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия
+                        договора</a></span>
+                  </label>
+
+                  <button class="submit" type="submit">Отправить</button>
                   
               </form>
-              <label class="form-field-checkbox">
-                <input type="checkbox" class="checkbox" name="policy">
-                <span class="checkbox-icon"></span>
-                <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия
-                    договора</a></span>
-              </label>
               
               
-              <button class="submit" type="submit">Отправить</button>
+              
+              
 
 
               <button class="modal-btn" data-modal-close>
@@ -426,12 +428,12 @@
     </section>
   </main>
 
-  <footer>
-    <section class="section contacts">
+  <footer class="page-footer">
+    
       <div class="container contacts">
         <div>
           <a href="" class="logo"> Web <span class="logo-studio">Studio</span></a>      
-          <address class="address">
+          <address class="footer-address">
               <p class="address-item">г. Киев, пр-т Леси Украинки, 26 </p>
               <a href="mailto:info@devstudio.com" class=" contacts-link">info@devstudio.com</a>
               <a href="Tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
@@ -484,7 +486,12 @@
           <label class="subscribe-label">
             <input type="Email" class="subscribe-input" name="Email" placeholder="E-mail ">
           </label>
-          <button type="submit" class="subscribe-btn">Подписаться</button>
+          <button type="submit" class="subscribe-btn">
+            Подписаться
+            <svg class="subscribe-svg">
+              <use href='./images/svg/sprite.svg#icon-icon-send'></use>
+            </svg>
+          </button>
         </form>
         </div>
 
@@ -494,7 +501,7 @@
 
 
       </div>
-    </section>
+    
   </footer>
   <script src="./js/modal.js"></script>
 </body>
