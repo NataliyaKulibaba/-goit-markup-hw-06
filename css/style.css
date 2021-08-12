@@ -800,6 +800,7 @@ header {
 .subscribe-input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
+  color: #fff;
 }
 
 .subscribe-btn {
